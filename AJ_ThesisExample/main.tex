@@ -1,0 +1,135 @@
+%%%%%%%%%%%%
+%%%%%%%%%%%%
+%Title page
+%%%%%%%%%%%%
+%%%%%%%%%%%%
+
+\begin{titlepage}
+
+\begin{doublespace}
+\vspace*{1.2in}
+\begin{center} 
+{\Huge {\bf TITLE}} \\[0.2cm]
+\vspace*{3cm}
+A thesis \\
+\vspace*{2.0cm}
+{\large {\bf 2012}}\\
+\vspace*{1.5cm}
+{\LARGE \bf NAME} \\
+\vspace*{0.25cm}
+{\large \bf School}\\
+%\vspace*{1.5cm}
+\end{center}
+\end{doublespace}
+
+\end{titlepage}
+
+%%
+%%
+
+\setcounter{page}{2}
+
+%%
+%%
+
+%%%%%%%%%%%%
+%%%%%%%%%%%%
+%Contents/LOF/LOT
+%%%%%%%%%%%%
+%%%%%%%%%%%%
+
+%%
+%%
+\cleardoublepage
+\tableofcontents
+
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+\markboth{}{ }
+
+
+
+%%
+%%
+
+%%%%%%%%%%%%
+%%%%%%%%%%%%
+%Abstract
+%%%%%%%%%%%%
+%%%%%%%%%%%%
+
+%%
+%%
+\cleardoublepage
+
+\begin{chapter}*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+
+\end{chapter}
+
+%%
+%%
+
+%%%%%%%%%%%%
+%%%%%%%%%%%%
+%Stuff goes here
+%%%%%%%%%%%%
+%%%%%%%%%%%%
+
+%%
+%%
+
+\onehalfspace
+\cleardoublepage
+\begin{chapter}{Whatever.}
+\end{chapter}
+
+%%
+%%
+
+%%
+%%
+
+%\addappheadtotoc
+
+%\appendixpage
+\cleardoublepage
+
+\appendix
+
+\begin{chapter}{Appendix}
+
+\label{sec:appendix}
+%\hrule
+%\vspace*{0.625in}
+
+\begin{appendices}
+
+Content goes here
+
+\end{appendices}
+
+\end{chapter}
+
+%%
+%%
+
+
+%%
+%%
+
+\cleardoublepage
+
+\newpage
+\addcontentsline{toc}{chapter}{References}
+
+\bibliographystyle{aj} %
+\bibliography{mybib} % expects file "mybib.bib" in folder
+
+
+%%
+%%
+

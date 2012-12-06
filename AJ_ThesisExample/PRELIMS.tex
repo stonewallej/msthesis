@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Miscellaneous Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[numbers]{natbib}
+\usepackage{helvet} 			% set font to helvetica
+\usepackage{amsmath}                    % need for subequations
+\usepackage[pdftex]{graphicx}   		% need for including PDF figures
+\usepackage{graphicx}                  % use to insert eps images into document
+\usepackage{pdfpages}                  % use for inserting PDF's into the document
+%\usepackage{semioneside}               % use for single sided documents
+\usepackage{verbatim}                   % useful for program listings
+\usepackage{color}                      % use if colour is used in text
+\usepackage{subfigure}                  % use for side-by-side figures
+\usepackage{appendix}                   % use for appendices
+\usepackage{setspace}
+\usepackage{moreverb}
+\usepackage{multirow}
+\usepackage{rotating}
+%\usepackage{pstricks}
+%\usepackage{vector}
+\usepackage{fancyhdr}
+\usepackage{longtable}                    % use long tables
+\usepackage{filecontents}
+\pagestyle{fancy}
+\cfoot{}							%gets rid of page numbers in footer
+%\fancyhead[LE, RO]{\slshape \rightmark}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}	 %next 2 lines put section as header
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\rhead{\thepage}				%puts page numbers in header
+\renewcommand{\bibname}{References}
+\usepackage{setspace} 			 % allows 1.5/double spacing
+\usepackage{lscape}			% allows pages to be placed in landscape
+\usepackage{cite}
+\usepackage{titlesec}
+\usepackage{hyperref}
+%\usepackage{pstricks}
+%\usepackage{auto-pst-pdf}
+\usepackage{psfrag}
+%\usepackage{emptypage}
+\usepackage{a4}
+\usepackage{bm}
+\usepackage{color}		% Need the color package
+\usepackage{epsfig}		% to use .eps figures 
+\usepackage{comment}
+\usepackage{layout}
+\usepackage{subfigure}
+\usepackage{indentfirst}
+\usepackage{longtable}
+\usepackage{cleveref}
+\usepackage[small,bf,singlelinecheck=off]{caption}
+\graphicspath{./{../../FIGURES/}}				% look for images in separate folder called "FIGURES"
+%\usepackage[numbers]{natbib}
+%\fancyhead[LE,RO]{\thepage}
+\fancyhead{} % clear all fields
+\fancyhead[RO,LE]{\thepage} 					
+\fancyhead[LO,RE]{\rightmark}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Custom Margins for large tables
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\parindent}{0.6cm}
+%\newenvironment{custommargins}[2]
+%{\addtolength{\leftskip}{#1}\addtolength{\rightskip}{#2}}{\par}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Floating Packages (Tables in Appendices - m)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{float}
+%\floatplacement{table}{H}
+%\usepackage{hvFloat}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Change the margins of the pages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\hoffset0cm
+%\topmargin-0.5cm
+%\footskip1cm
+\usepackage[margin=25mm]{geometry}
+\setlength{\oddsidemargin}{15mm}
+\setlength{\evensidemargin}{-5mm}
+\setlength{\textwidth}{150mm}
+\setlength{\headwidth}{150mm}
+\setlength{\headheight}{13.6pt}%\textheight22cm
+\setlength{\topmargin}{-0.7cm}
+\setlength{\textheight}{23.5cm}%\vfuzz1pc
+%\hfuzz1pc
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Aliases
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\at}{\ensuremath{\alpha,t}}
+\newcommand{\hd}{$^3$He,$d$}
+\newcommand{\de}{\ensuremath{^{\circ}}}
+\newcommand{\he}{$^{3}$He}
+\newcommand{\al}{$\alpha$}
+\newcommand{\bra}[1]{\langle #1|}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\braket}[3]{\langle {#1} | #2 | {#3} \rangle}
+\newcommand{\brakett}[2]{\langle {#1} | {#2} \rangle}
+\newcommand{\p}[2]{$\pi$#1$_{#2}$}
+\newcommand{\n}[2]{$\nu$#1$_{#2}$}
+\newcommand{\nuc}[2]{$^{#1}$#2}
+
+
+
+\usepackage{appendix}
+
+% End of preamble 

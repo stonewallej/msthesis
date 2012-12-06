@@ -1,0 +1,70 @@
+\documentclass[a4paper,12pt,english]{report}
+% Additional Options
+\usepackage[left=1.5in, right=1.0in, top=1.0in, bottom=1.5in]{geometry}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{amsmath}
+\hypersetup{colorlinks=false, pdfborder={0 0 0}} %removes red boxes from toc
+\usepackage{float}
+\floatstyle{boxed}
+\restylefloat{figure}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.eps, .pdf, .png, .jpg}
+
+\begin{document}
+\thispagestyle{empty}
+\include{FirstPage}
+\thispagestyle{empty}
+\include{SecondPage}
+\renewcommand\baselinestretch{1.2}
+\baselineskip=14pt plus1pt
+
+\pagenumbering{roman}
+\doublespacing
+
+\include{Abstract}
+\include{Acknowledgement}
+
+\tableofcontents
+\newpage
+\phantomsection \label{List of Figures}
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\newpage
+\phantomsection \label{List of Tables}
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+
+\clearpage
+
+\doublespacing
+
+\pagenumbering{arabic}
+
+\include{Introduction}
+
+\include{Gammas}
+
+\include{Position-sensitivity}
+
+\include{Ortec}
+
+\include{PHDs}
+
+\include{Setup}
+
+\include{Data}
+
+\include{Findings}
+
+\include{Applications}
+
+\cleardoublepage
+
+\newpage
+\phantomsection \label{References}
+\addcontentsline{toc}{chapter}{References}
+\include{References}
+
+\end{document}

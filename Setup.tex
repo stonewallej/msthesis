@@ -1,0 +1,25 @@
+\chapter{Electronics and experimental setup}
+\label{ch:Electronics and experimental setup}
+\section{Detector and source geometry}
+\indent geometry
+
+\section{Analog Ele}
+
+MSU system, ROOT, SpecTcl
+
+\indent The same set of analog electronics is used for data collection with the Ortec and NP7 detectors. Each detector had its own set of preamplifiers. Signals from the preamps are sent into CAEN N568B spectroscopy amplifiers. The spec amps have 16 channels and are programed with a CAENET cable to roughly gain match the signals. A more precise gain matching is done later in software. (show sort codes in an appendix?) Energy outputs from the spec amps are fed into a Phillips 7164 analog-to-digital converter. Fast timing outputs from the spec amps lead to CAEN C894 discriminators. The OR of the discriminator outputs are the two inputs for a Phillips 755 logic unit and the 16 timing signals from each side go to Phillips 7186H time-to-digital converters. The Li side of the Ortec detector and the "A" side of the NP7 detector are delayed 150ns so that they always came after the signals from the other side. The logic unit requires the presence of a signal from both the front and back of the detector to produce an output that is sent to another Phillips logic unit. This box provides a 500ns gate to the trigger for the Wiener CC-USB crate controller in the CAMAC crate and a 50ns gate for the ADCs after passing through a Phillips794 gate and delay generator. Also from this logic unit, a common stop signal is sent to the TDCs after passing through a NIM/ECL converter. The CC-USB sends a start signal to a Lecroy 222 gate generator set in latch mode which supplies the veto signal for the logic unit that produces the CC-USB trigger. When its done processing an event, the CC-USB sends a signal, through a 40ns delay box, to release the latch. Time and energy data is collected by the crate controller from the two ADCs and two TDCs in the CAMAC crate. The signals are passed to the computer using a usb cable from the crate controller. 
+
+\indent This project utilizes READOUT, software developed at Michigan State University for simultaneous data acquisition of multiple channels. 
+
+include electronics diagram .pdf here
+
+\section{Overcoming electronics problems}
+\indent switching cables to fix bad strips and bad electronics channels
+
+
+careful to avoid high count rates as they lead to pile-up events that can distort the spectrum \cite{Leo}
+
+ 
+
+
+ 
